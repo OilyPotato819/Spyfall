@@ -1,0 +1,13 @@
+body {
+   text-align: center;
+   padding-top: 20px;
+}
+
+p {
+   margin: 0;
+}
+
+input {
+   display: block;
+   margin: 0px auto 20px auto;
+}
