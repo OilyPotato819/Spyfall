@@ -30,6 +30,16 @@ input {
    text-align: center;
 }
 
+button {
+   border-radius: 5px;
+   background-color: rgb(26, 54, 107);
+   color: rgb(210, 210, 210);
+   border: 1px solid black;
+   width: 70px;
+   height: 30px;
+   margin-top: 20px;
+}
+
 .prevent-select {
    -webkit-user-select: none;
    -ms-user-select: none;

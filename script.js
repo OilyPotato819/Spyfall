@@ -32,6 +32,13 @@ function createGame() {
    for (let i = 0; i < playerNum; i++) {
       createRoleBox(i);
    }
+
+   const restart = document.createElement('button');
+   restart.innerHTML = 'Restart';
+   restart.addEventListener('click', () => {
+      console.log('pressed');
+   });
+   document.body.appendChild(restart);
 }
 
 // createGame();
