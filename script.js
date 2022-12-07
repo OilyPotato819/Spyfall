@@ -4,6 +4,7 @@ const spyNumEl = document.getElementById('spy-num');
 
 let players;
 let playersI;
+let viewing = false;
 
 form.addEventListener('submit', (event) => {
    event.preventDefault();
@@ -53,13 +54,17 @@ function createRoleBox(i) {
          element.classList.remove('viewed');
 
          element.innerHTML = i + 1;
-      } else {
+
+         viewing = false;
+      } else if (!viewing) {
          element.setAttribute('viewed', 'true');
 
          element.classList.add('viewed');
          element.classList.remove('not-viewed');
 
          element.innerHTML = element.getAttribute('location');
+
+         viewing = true;
       }
    }
 
