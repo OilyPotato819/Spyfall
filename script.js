@@ -36,7 +36,7 @@ function createGame() {
    const restart = document.createElement('button');
    restart.innerHTML = 'Restart';
    restart.addEventListener('click', () => {
-      console.log('pressed');
+      window.location.reload();
    });
    document.body.appendChild(restart);
 }
