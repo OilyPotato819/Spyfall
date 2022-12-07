@@ -1,6 +1,6 @@
-let form = document.getElementById('form');
-let playerNumEl = document.getElementById('player-num');
-let spyNumEl = document.getElementById('spy-num');
+const form = document.getElementById('form');
+const playerNumEl = document.getElementById('player-num');
+const spyNumEl = document.getElementById('spy-num');
 
 let players;
 let playersI;
