@@ -35,6 +35,9 @@ function createGame() {
 
    const restart = document.createElement('button');
    restart.innerHTML = 'Restart';
+   restart.style.fontSize = '20px';
+   restart.style.width = '100px';
+   restart.style.height = '40px';
    restart.addEventListener('click', () => {
       window.location.reload();
    });
@@ -46,6 +49,8 @@ function createGame() {
 function createRoleBox(i) {
    const element = document.createElement('p');
    element.innerHTML = i + 1;
+   element.style.height = '40px';
+   element.style.paddingTop = '10px';
    element.classList.add('prevent-select');
 
    element.setAttribute('location', players[i]);
@@ -89,3 +94,5 @@ function getLocationArr() {
 function randInt(min, max) {
    return Math.floor(Math.random() * (max - min) + min);
 }
+
+console.log(window.location.href);
